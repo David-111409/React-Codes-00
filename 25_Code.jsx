@@ -30,3 +30,24 @@ function App() {
 
 export default App;
 */
+
+/*import { useState } from "react";
+
+function MyButton() {
+  const [count, setCount] = useState(0);
+  function handelClick() {
+    return setCount((prev) => prev + 1);
+  }
+  return <button onClick={handelClick}>cilcked {count} times</button>;
+}
+
+function App() {
+  return (
+    <>
+      <MyButton />
+      <MyButton />
+    </>
+  );
+}
+
+export default App;*/
