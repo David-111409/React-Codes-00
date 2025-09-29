@@ -1,4 +1,4 @@
-const products = [
+/*const products = [
   { title: "Cabbage", isFruit: false, id: 1 },
   { title: "Garlic", isFruit: false, id: 2 },
   { title: "Apple", isFruit: true, id: 3 },
@@ -14,3 +14,19 @@ function MyApp() {
 }
 
 export default MyApp;
+*/
+
+/*
+function MyButton() {
+  function handleClick() {
+    alert("Button is clicked");
+  }
+  return <button onClick={handleClick}>click</button>;
+}
+
+function App() {
+  return <MyButton />;
+}
+
+export default App;
+*/
