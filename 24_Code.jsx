@@ -42,3 +42,18 @@ function MyApp() {
 }
 
 export default MyApp;
+
+// another file to use map with list rendering
+// const products = [
+//   { title: "Cabbage", id: 1 },
+//   { title: "Garlic", id: 2 },
+//   { title: "Apple", id: 3 },
+// ];
+
+// let listItems = products.map((el) => <li key={el.id}>{el.title}</li>);
+// function MyApp() {
+//   return <ul>{listItems}</ul>;
+// }
+
+// export default MyApp;
+
