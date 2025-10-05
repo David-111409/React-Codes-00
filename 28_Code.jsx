@@ -26,3 +26,19 @@ const App = () => {
 };
 
 export default App;
+/*
+function Container(props) {
+  return <div>{props.children}</div>;
+}
+function App() {
+  return (
+    <Container>
+      <h1>Hello world</h1>
+      <h2>From here our country Egypt!</h2>
+      <h5>This is the mother of land!</h5>
+    </Container>
+  );
+}
+
+export default App;
+*/
