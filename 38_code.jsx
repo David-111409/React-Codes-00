@@ -41,3 +41,19 @@ function App() {
 }
 
 export default App;
+/*
+
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid gray;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .active {
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+  }
+*/
