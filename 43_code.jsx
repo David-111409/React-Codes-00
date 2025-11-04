@@ -2,11 +2,12 @@ import { useState } from "react";
 import { places } from "./data.js";
 import { getImageUrl } from "./utils.js";
 import { createContext, useContext } from "react";
-export const ImageContext = createContext();
-
+const ImageContext = createContext();
+const PlaceContext = createContext();
 export default function App() {
   const [isLarge, setIsLarge] = useState(false);
   const imageSize = isLarge ? 200 : 80;
+
   return (
     <>
       <label>
@@ -29,18 +30,20 @@ export default function App() {
 
 function List() {
   const listItems = places.map((place) => (
-    <li key={place.id}>
-      <Place place={place}  />
-    </li>
+    <PlaceContext.Provider value={place}>
+      <li key={place.id}>
+        <Place  />
+      </li>
+    </PlaceContext.Provider>
   ));
   return <ul>{listItems}</ul>;
 }
 
-function Place({ place }) {
-  
+function Place() {
+  const place = useContext(PlaceContext);
   return (
     <>
-      <PlaceImage place={place}  />
+      <PlaceImage  />
       <p>
         <b>{place.name}</b>
         {": " + place.description}
@@ -49,8 +52,9 @@ function Place({ place }) {
   );
 }
 
-function PlaceImage({ place }) {
+function PlaceImage() {
   const useImageSize = useContext(ImageContext);
+  const place = useContext(PlaceContext);
   return (
     <img
       src={getImageUrl(place)}
