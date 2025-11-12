@@ -36,3 +36,30 @@
 // }
 
 // export default Product;
+
+// import { createContext } from "react";
+// import Product from "./Product";
+// // export const proContext = createContext();
+// function App() {
+//   // return <proContext.Provider value={"Khaled"}>
+//   return <Product name="Khaled Dawoud" />;
+//   {
+//     /* </proContext.Provider>; */
+//   }
+// }
+// // // Product.js
+// // import Child from "./Child";
+// // function Product({name}) {
+// //   return <Child name = {name}/>;
+// // }
+// // file Child.js
+// // import { useContext } from "react";
+// // import { proContext } from "./App";
+// // function Child({name}) {
+// //     // const name = useContext(proContext);
+// //   return <h1>Hello, {name}</h1>;
+// // }
+
+// // export default Child;
+// // export default Product;
+// export default App;
