@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+body {
+    font-family: "Inter", serif;
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+:root {
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey-700: hsl(0, 0%, 20%);
+    --color-grey-800: hsl(0, 0%, 12%);
+    --color-grey-900: hsl(0, 0%, 8%);
+}
+
+#main {
+    background-color: var(--color-grey-900);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    background-color: var(--color-grey-800);
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; */
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-white);
+    transition: all .3s ease;
+}
+
+.card .card-content {
+    padding: 25px 40px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center;  */
+    color: var(--color-white);
+}
+.card .card-content img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.card .card-content h1 {
+    margin-top: 30px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.card .card-content h2 {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-green);
+}
+.card .card-content p {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.card .card-content .list-items {
+    margin-top: 20px;
+}
+
+.card .card-content .list-items .item {
+    margin-top: 15px;
+    background-color: var(--color-grey-700);
+    padding: 12px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.card .card-content .list-items .item:hover {
+    background-color: var(--color-green);
+}
+
+.card .card-content .list-items .item:hover a {
+    color: var(--color-grey-800);
+}
