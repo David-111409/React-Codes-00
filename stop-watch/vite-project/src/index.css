@@ -1,0 +1,55 @@
+/* Center everything */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f5f7fa;
+    font-family: "Inter", sans-serif;
+  }
+  
+  /* Timer styling */
+  .timer {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+  }
+  
+  /* Buttons container */
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Main button style */
+  .btn {
+    background: #4caf50;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  /* Red button for reset */
+  .reset {
+    background: #e53935;
+  }
+  
+  /* Hover effect */
+  .btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  /* Active effect */
+  .btn:active {
+    transform: scale(0.95);
+  }
+  
