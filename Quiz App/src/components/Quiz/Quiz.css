@@ -1,0 +1,115 @@
+.container {
+    background-color: white;
+    max-width: 640px;
+    /* height: 760px; */
+    color: #262626;
+    border-radius: 10px;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container hr {
+    height: 2px;
+    background-color: #707070;
+    border: none;
+}
+
+.container h2 {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.container ul li {
+    height: 70px;
+    border: 1px solid #686868;
+    padding-left: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.container button {
+    width: 250px;
+    height: 65px;
+    background-color: #553f9a;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.container button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.container .result {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.container .result .box,
+h1.res .box {
+    color: #553f9a;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    border: 1.5px solid #553f9a;
+    border-radius: 5px;
+}
+h1.res .box {
+    color: #fff;
+    border: 1.5px solid #fff;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.container ul .right {
+    background-color: #dffff2;
+    border-color: #00d397;
+}
+
+.container ul .wrong {
+    background-color: #ffebeb;
+    border-color: #ff4a4a;
+}
+
+.res {
+    /* font-size: 25px; */
+    font-weight: 500;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    letter-spacing: 2px;
+}
+
+.res .reset{
+    width: 250px;
+    height: 65px;
+    background-color: #553f9a;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    letter-spacing: 2px;
+}
