@@ -41,3 +41,68 @@ export default function App() {
         </>
     );
 }
+
+/*
+import { clear } from "@testing-library/user-event/dist/clear";
+import { useEffect } from "react";
+import { useReducer, useState, useRef } from "react";
+const initialState = {
+  first: 0,
+  sec: 10,
+};
+function reducer(state, action) {
+  const { type, value } = action;
+  switch (type) {
+    case "INCREMENT1":
+      return { ...state, first: state.first + value };
+    case "RESET1":
+      return { ...state, first: 0 };
+    case "INCREMENT2":
+      return { ...state, sec: state.sec + value };
+    case "RESET2":
+      return { ...state, sec: 10 };
+    default:
+      return state;
+  }
+}
+function App() {
+  const [counter, dispatch] = useReducer(reducer, initialState);
+  const [timer, setTimer] = useState(0);
+  const timerRef = useRef(0);
+  useEffect(() => {
+    timerRef.current = setInterval(() => {
+      setTimer((timer) => timer + 1);
+    }, 1000);
+    return () => {
+      clearInterval(timerRef.current);
+    };
+  }, []);
+  return (
+    <div>
+      <h1>first: {counter.first}</h1>
+      <button onClick={() => dispatch({ type: "INCREMENT1", value: 1 })}>
+        Increment first by 1
+      </button>
+      <button onClick={() => dispatch({ type: "INCREMENT1", value: 5 })}>
+        Increment first by 5
+      </button>
+
+      <button onClick={() => dispatch({ type: "RESET1" })}>Reset first</button>
+
+      <h1>second : {counter.sec}</h1>
+      <button onClick={() => dispatch({ type: "INCREMENT2", value: 1 })}>
+        Increment sec by 1
+      </button>
+      <button onClick={() => dispatch({ type: "INCREMENT2", value: 5 })}>
+        Increment sec by 5
+      </button>
+      <button onClick={() => dispatch({ type: "RESET2" })}>Reset second</button>
+
+      <h1>Timer: {timer}</h1>
+      <button onClick={() => clearInterval(timerRef.current)}>pause the timer</button>
+    </div>
+  );
+}
+
+export default App;
+*/
