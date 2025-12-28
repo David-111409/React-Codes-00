@@ -1,0 +1,39 @@
+.background {
+  position: fixed; /* makes it full-screen */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: cover;
+  width: 100vw;
+  /* height: 100vh; */
+  /* overflow: hidden; */
+  z-index: -1; /* stays behind content */
+}
+
+/* Image */
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills screen without distortion */
+}
+
+/* Video */
+.background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 500ms ease-in-out;
+}
